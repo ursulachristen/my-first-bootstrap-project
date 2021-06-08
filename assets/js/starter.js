@@ -28,3 +28,8 @@ import "../../node_modules/bootstrap/js/dist/base-component.js";
 // Then your specific components
 import "../../node_modules/bootstrap/js/dist/dropdown.js";
 import "../../node_modules/bootstrap/js/dist/offcanvas.js";
+import "../../node_modules/bootstrap/js/dist/collapse.js";
+
+// Own components
+import "../../js/submenu.js";
+

@@ -31,10 +31,23 @@ $enable-shadows: true;
 $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 
 // Customize some defaults
-$body-color: #333;
+$body-color: #535353;
 $body-bg: #fff;
 $border-radius: .4rem;
-$success: #7952b3;
+$success: #DB0015;
+$primary: #E6007E;
+$footer-bg: #F3F3F3;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1141px
+);
+$nav-color: $body-color;
+$nav-hover-color: $primary;
+// 
+//$font-family-base: "Helvetica Neue";
 
 // Required
 @import "bootstrap/scss/functions";
@@ -55,8 +68,8 @@ $success: #7952b3;
 @import "bootstrap/scss/transitions";
 @import "bootstrap/scss/dropdown";
 // @import "bootstrap/scss/button-group";
-// @import "bootstrap/scss/nav";
-// @import "bootstrap/scss/navbar"; // Requires nav
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar"; // Requires nav
 // @import "bootstrap/scss/card";
 // @import "bootstrap/scss/breadcrumb";
 // @import "bootstrap/scss/accordion";
@@ -76,7 +89,8 @@ $success: #7952b3;
 @import "bootstrap/scss/offcanvas"; // Requires transitions
 
 // Helpers
-// @import "helpers";
+@import "bootstrap/scss/helpers";
+// @import "bootstrap/scss/helpers/position";
 
 // Utilities
 @import "bootstrap/scss/utilities/api";
@@ -86,10 +100,13 @@ $success: #7952b3;
 // Custom styles
 //
 
-@import "icon-list";
+//@import "icon-list";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+@import "betterhomes.scss";
 
 body {
-  padding: 3rem 1.5rem;
+  padding: 0;
+  margin: 0;
 }
 
 // Style Bootstrap icons
